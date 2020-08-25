@@ -1,1 +1,19 @@
+#找出最大值
+for i in range(len(num)-1):
+    if num[i] > num[i+1]:
+        num[i],num[i+1] = num[i+1],num[i]
+print(num)
+
+    1
+    2
+    3
+    4
+    5
+
+#冒泡排序
+for j in range(len(num)-1):
+    for i in range(len(num)-j-1):
+        if num[i] > num[i + 1]:
+            num[i], num[i + 1] = num[i + 1], num[i]
+print(num)
 
